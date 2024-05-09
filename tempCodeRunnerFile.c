@@ -1,0 +1,2 @@
+
+    digitSeperation(n);
