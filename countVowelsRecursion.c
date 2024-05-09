@@ -1,20 +1,13 @@
 #include<stdio.h>
 int countVowels(char s[],int i){
-    if(s[i]=='\0') {
-        return 0;
-        }
-    int ans=countVowels(s, i+1);
-    //if s[i] is capital, convert into small letter
-    if(s[i]>='A'&&s[i]<='Z'){
-        s[i]=s[i]+32;
-    }
-    //count if its a vowels
-    if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
-        return ans+1;
-    }
-    else{
-        ans;
-    }
+  if(s[i]=='\0') return 0;
+  int vowels=countVowels(s, i+1);
+  if(s[i]=='a'||s[i]=='A'||s[i]=='e'||s[i]=='E'||s[i]=='i'||s[i]=='I'||s[i]=='o'||s[i]=='O'||s[i]=='u'||s[i]=='U'){
+    return vowels+1;
+  }
+  else { 
+    return vowels;
+  };
 }
 int main(){
     char s[200];
