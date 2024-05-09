@@ -11,7 +11,8 @@ int countVowels(char s[],int i){
     //count if its a vowels
     if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
         return ans+1;
-    }else{
+    }
+    else{
         ans;
     }
 }
@@ -20,5 +21,5 @@ int main(){
     fgets(s, 200, stdin);
    int vowels=countVowels(s,0);
    printf("%d",vowels);
-    return 0;
+   return 0;
 }
